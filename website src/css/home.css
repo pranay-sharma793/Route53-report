@@ -1,0 +1,103 @@
+/*
+Name: Pranay Sharma
+G# G01393761  
+
+NOTE: This is the style sheet for the upper part of the landing page. This template is inspired by https://anniew.xyz/
+*/
+
+.main-container {
+    margin: -100px auto 0 auto;
+}
+
+/* --- LANDING PAGE --- */
+
+#home {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.landing-page-details {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small-title {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.big-title {
+    margin: 0;
+    text-align: left;
+    font-weight: 700;
+    font-size: 2.75em;
+    letter-spacing: 0;
+}
+
+.medium-title {
+    margin: 0;
+    text-align: right;
+    font-weight: bolder;
+    font-size: 2.75em;
+    letter-spacing: 0;
+}
+
+.my-name {
+    letter-spacing: 0.1em;
+    font-family: 'Fira Code', monospace;
+}
+
+h3 {
+    margin: 5px 0 0 0;
+    text-align: left;
+}
+
+h3 em {
+    color: white;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+    font-size: 0.5em;
+    letter-spacing: 0.15em;
+    padding-right: 2em;
+
+}
+
+.art-me {
+    display: none;
+    height: 350px; 
+}
+
+.art-me img {
+    padding-left: 4em;
+    height: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+    .big-title {
+        font-size: 3.5em;
+    }
+    .short-bio {
+        max-width: 90%;
+    }
+    .art-me {
+        display: block;
+    }
+    #home {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #home {
+        gap: 10%;
+    }
+}

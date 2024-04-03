@@ -1,0 +1,220 @@
+/*
+Name: Pranay Sharma
+G# G01393761  
+
+NOTE: This is the style sheet for design, assignment cards and footer of the landing page. This template is inspired by https://anniew.xyz/
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1D263B;
+}
+
+h1, h2 {
+    font-family: 'Fira Mono', monospace;
+}
+
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 700;
+    padding-left: 3em;
+    letter-spacing: 0.1em;
+}
+
+a, span {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.pink {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: #F08CAE;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.social-link a i {
+    transition: all 0.2s ease;
+}
+
+.social-link a i:hover {
+    color: #F08CAE;
+}
+
+.main-container {
+    margin: 0 auto;
+    padding: 0 150px;
+    text-align: center;
+    max-width: 1600px;
+}
+
+section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-top: 8vh;
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 2em;
+    }
+}
+
+/* project/assignment cards */
+
+em {
+    color: #1D263B;
+}
+
+.projects {
+    padding-top: 100px;
+    max-width: 1200px;
+}
+
+.project-cards-container {
+    margin-top: 50px;
+    height: fit-content;
+    height: -moz-fit-content;
+}
+
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    color: #1D263B;
+}
+
+.card:not(:last-child) {
+    margin: 0 auto 2em auto;
+}
+
+.card-preview-img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding-top: 8px;
+    background-color: white;
+}
+
+.card-info {
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 10px 10px;
+}
+
+.title-and-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:25px;
+}
+
+.project-title{
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 0.07em;
+    color: #F08CAE;
+    text-decoration: underline;
+    transition: 0.5s ease-out 10ms
+}
+
+.project-title:hover{
+    font-size: 1.7em;
+    color:#1D263B;
+  }
+
+
+.project-description {
+    color: #1D263B;
+}
+
+@media only screen and (min-width: 768px) {
+    .project-cards-container {
+        column-count: 2;
+        column-gap: 2em;
+    }
+}
+
+
+/* footer */
+
+.footer-container {
+    border-top: 0.5px solid #7EB77F;
+    margin: 30px auto;
+    padding-top: 30px;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.socials {
+    margin: 10px 0;
+}
+
+.socials ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.socials ul li:not(:last-child) {
+    margin-right: 12px;
+}
+
+.socials ul li a i {
+    font-size: 1.5em;
+}
+
+.footer-end {
+    margin-top: 5px;
+    letter-spacing: 0.05em;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        margin: 0 auto;
+        padding: 0 25px;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1600px;
+    }
+}
